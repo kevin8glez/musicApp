@@ -14,18 +14,15 @@
         android:layout_height="31dp"
         android:indeterminate="false"
         android:max="100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/play" />
+        tools:layout_editor_absoluteX="498dp"
+        tools:layout_editor_absoluteY="334dp" />
 
     <ImageView
         android:id="@+id/diskaIrudia"
-        android:layout_width="302dp"
-        android:layout_height="302dp"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19999999"
@@ -36,36 +33,27 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:backgroundTint="#5203D4F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/play"
-        app:layout_constraintHorizontal_bias="0.66"
-        app:layout_constraintStart_toEndOf="@+id/diskaIrudia"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@android:drawable/ic_media_previous" />
+        app:srcCompat="@android:drawable/ic_media_previous"
+        tools:layout_editor_absoluteX="390dp"
+        tools:layout_editor_absoluteY="243dp" />
 
     <ImageButton
         android:id="@+id/hurrengoa"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:backgroundTint="#5203D4F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toEndOf="@+id/diskaIrudia"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@android:drawable/ic_media_next" />
+        app:srcCompat="@android:drawable/ic_media_next"
+        tools:layout_editor_absoluteX="589dp"
+        tools:layout_editor_absoluteY="243dp" />
 
     <ImageButton
         android:id="@+id/play"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:backgroundTint="#5203D4F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/hurrengoa"
-        app:layout_constraintHorizontal_bias="0.83"
-        app:layout_constraintStart_toEndOf="@+id/diskaIrudia"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@android:drawable/ic_media_play" />
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteX="490dp"
+        tools:layout_editor_absoluteY="243dp" />
 
     <TextView
         android:id="@+id/abestia"
@@ -77,7 +65,7 @@
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/abeslaria"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diskaIrudia" />
 
@@ -88,9 +76,10 @@
         android:text="Backstreet Boys"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abestia" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/abestia"
+        app:layout_constraintTop_toBottomOf="@+id/diskaIrudia"
+        app:layout_constraintVertical_bias="0.72" />
 
     <SeekBar
         android:id="@+id/seekBarAbestia"
@@ -98,53 +87,41 @@
         android:layout_height="23dp"
         android:indeterminate="false"
         android:max="100"
-        app:layout_constraintBottom_toTopOf="@+id/play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/diskaIrudia"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        tools:layout_editor_absoluteX="358dp"
+        tools:layout_editor_absoluteY="195dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:backgroundTint="#5203D4F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aurrekoa"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        tools:layout_editor_absoluteX="513dp"
+        tools:layout_editor_absoluteY="327dp" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="#5203D4F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/play"
-        app:layout_constraintTop_toBottomOf="@+id/hurrengoa"
-        app:srcCompat="@android:drawable/ic_menu_share" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:backgroundTint="#5203D4F4"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:srcCompat="@android:drawable/ic_menu_share"
+        tools:layout_editor_absoluteX="606dp"
+        tools:layout_editor_absoluteY="319dp" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="296dp"
-        android:layout_height="144dp"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
         android:background="#CBF4F3"
-        android:text="Letra"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/diskaIrudia"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024" />
+        android:text="Everybody Rock your body Everybody Rock your body right Backstreet's back, alright! Hey, yeah, oh"
+        tools:layout_editor_absoluteX="377dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50490886" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
