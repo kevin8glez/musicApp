@@ -14,8 +14,10 @@
         android:layout_height="31dp"
         android:indeterminate="false"
         android:max="100"
-        tools:layout_editor_absoluteX="498dp"
-        tools:layout_editor_absoluteY="334dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/aurrekoa" />
 
     <ImageView
         android:id="@+id/diskaIrudia"
@@ -33,27 +35,33 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:backgroundTint="#5203D4F4"
-        app:srcCompat="@android:drawable/ic_media_previous"
-        tools:layout_editor_absoluteX="390dp"
-        tools:layout_editor_absoluteY="243dp" />
+        app:layout_constraintBottom_toTopOf="@+id/seekBarBolumena"
+        app:layout_constraintEnd_toStartOf="@+id/play"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarAbestia"
+        app:srcCompat="@android:drawable/ic_media_previous" />
 
     <ImageButton
         android:id="@+id/hurrengoa"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:backgroundTint="#5203D4F4"
-        app:srcCompat="@android:drawable/ic_media_next"
-        tools:layout_editor_absoluteX="589dp"
-        tools:layout_editor_absoluteY="243dp" />
+        app:layout_constraintBottom_toTopOf="@+id/seekBarBolumena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarAbestia"
+        app:srcCompat="@android:drawable/ic_media_next" />
 
     <ImageButton
         android:id="@+id/play"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:backgroundTint="#5203D4F4"
-        app:srcCompat="@android:drawable/ic_media_play"
-        tools:layout_editor_absoluteX="490dp"
-        tools:layout_editor_absoluteY="243dp" />
+        app:layout_constraintBottom_toTopOf="@+id/seekBarBolumena"
+        app:layout_constraintEnd_toStartOf="@+id/hurrengoa"
+        app:layout_constraintStart_toEndOf="@+id/aurrekoa"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarAbestia"
+        app:srcCompat="@android:drawable/ic_media_play" />
 
     <TextView
         android:id="@+id/abestia"
@@ -66,8 +74,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/abeslaria"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diskaIrudia" />
+        app:layout_constraintTop_toBottomOf="@+id/diskaIrudia"
+        app:layout_constraintVertical_bias="0.84000003" />
 
     <TextView
         android:id="@+id/abeslaria"
@@ -79,43 +89,53 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toEndOf="@+id/abestia"
         app:layout_constraintTop_toBottomOf="@+id/diskaIrudia"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.84000003" />
 
     <SeekBar
         android:id="@+id/seekBarAbestia"
         android:layout_width="358dp"
         android:layout_height="23dp"
+        android:layout_marginTop="23dp"
         android:indeterminate="false"
         android:max="100"
-        tools:layout_editor_absoluteX="358dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toTopOf="@+id/play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:backgroundTint="#5203D4F4"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        tools:layout_editor_absoluteX="513dp"
-        tools:layout_editor_absoluteY="327dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seekBarBolumena"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/aurrekoa"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:backgroundTint="#5203D4F4"
-        app:srcCompat="@android:drawable/ic_menu_share"
-        tools:layout_editor_absoluteX="606dp"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBarBolumena"
+        app:layout_constraintTop_toBottomOf="@+id/hurrengoa"
+        app:srcCompat="@android:drawable/ic_menu_share" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="320dp"
-        android:layout_height="150dp"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
         android:background="#CBF4F3"
         android:text="Everybody Rock your body Everybody Rock your body right Backstreet's back, alright! Hey, yeah, oh"
-        tools:layout_editor_absoluteX="377dp"
-        tools:layout_editor_absoluteY="19dp" />
+        app:layout_constraintBottom_toTopOf="@+id/seekBarAbestia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
